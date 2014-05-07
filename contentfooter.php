@@ -24,22 +24,6 @@
 	<li><a href="#top" accesskey="t"><?php _e('Top','basic2col'); ?></a></li>
 </ul>
 
-<ul>
-<li><a href="http://fruw.no/" title="<?php _e('Theme: Basic2Col by Kristin K. Wangen','basic2col'); ?>" rel="nofollow">Basic2Col</a></li>
-
-<?php do_action('basic2col_credits'); ?>
-
-<li><a href="http://wordpress.org/" title="<?php _e('Powered by WordPress','basic2col'); ?>">WordPress</a></li>
-
-	<?php if(is_basic2col_wpmu()) { global $current_site; ?>
-		<li><a href="http://<?php echo $current_site->domain . $current_site->path ?>" title="<?php _e('Hosted by','basic2col'); ?> <?php echo $current_site->site_name ?>">
-		<?php echo $current_site->site_name ?></a></li>
-	<?php } ?>
-
-</ul>
-
-
-
 
 </div>
 
