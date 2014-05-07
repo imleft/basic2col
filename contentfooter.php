@@ -16,7 +16,7 @@
 
 <ul>
 <li><?php _e('Content','basic2col'); ?> &copy; <a accesskey="1" href="<?php bloginfo('url'); ?>/">
-	<?php bloginfo('name'); ?></a> <?php the_time(__('Y','basic2col')) ?></li>
+	<?php bloginfo('name'); ?></a> 2008-2014</li>
 	<li><a href="http://validator.w3.org/check?uri=referer" title="<?php _e('Valid XHTML 1.0','basic2col'); ?>">
 		xhtml 1.0</a></li>
 	<li><a href="http://jigsaw.w3.org/css-validator/check/referer" title="<?php _e('Valid CSS 2','basic2col'); ?>">
