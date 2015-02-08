@@ -36,6 +36,24 @@
     </li>
   </ul>
 
+  <ul>
+    <li id="randomposts">
+      <h2>Random Posts</h2>
+      <ul>
+        <?php $posts = get_posts('orderby=rand&numberposts=5');
+              foreach($posts as $post) { ?>
+        <li>
+          <a href="<?php the_permalink(); ?>"
+             title="<?php the_title(); ?>">
+            <?php the_title(); ?>
+          </a>
+          (<?php the_time('Y'); ?>)
+        </li>
+        <?php } ?>
+      </ul>
+    </li>
+  </ul>
+
   <ul id="sb2">
     <?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar('Sidebar 2') ) : else : ?>
 
