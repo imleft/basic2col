@@ -2,13 +2,12 @@
    /*language stuff*/
    if(function_exists('load_betterlang_textdomain')) { load_betterlang_textdomain('basic2col'); }
    else { basic2col_textdomain(); }
-   /*doctype*/
-   echo basic2col_doctype();
    ?>
 
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
 
-<head profile="http://gmpg.org/xfn/11">
+<head>
   <meta http-equiv="Content-Type"
         content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
   <title>
@@ -31,7 +30,7 @@
         title="Atom 0.3"
         href="<?php bloginfo('atom_url'); ?>" />
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-  <?php wp_get_archives('type=monthly&format=link'); ?>
+  <!-- <?php wp_get_archives('type=monthly&format=link'); ?> -->
   <?php wp_head(); ?>
   <script type="text/javascript">
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

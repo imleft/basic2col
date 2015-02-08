@@ -129,13 +129,6 @@ function basic2col_welcome_message() {
   return apply_filters('basic2col_welcome_message', $message);
 }
 
-/*This filter let you change the doctype*/
-function basic2col_doctype() {
-  $doctype = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">';
-
-  return apply_filters('basic2col_doctype', $doctype);
-}
-
 
 /*This filter let you change the awaiting moderation message*/
 function basic2col_moderation_message() {

@@ -1,4 +1,3 @@
-<!-- -*- mode: html -*- -->
 <!-- begin sidebar -->
 <div id="sidebar">
   <ul id="sb1">
