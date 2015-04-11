@@ -22,16 +22,13 @@
         title="RSS 2.0"
         href="<?php bloginfo('rss2_url'); ?>" />
   <link rel="alternate"
-        type="text/xml"
-        title="RSS .92"
-        href="<?php bloginfo('rss_url'); ?>" />
-  <link rel="alternate"
         type="application/atom+xml"
-        title="Atom 0.3"
+        title="Atom 1.0"
         href="<?php bloginfo('atom_url'); ?>" />
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
   <!-- <?php wp_get_archives('type=monthly&format=link'); ?> -->
   <?php wp_head(); ?>
+  <?php if (!is_user_logged_in()) { ?>
   <script type="text/javascript">
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -41,6 +38,7 @@
     ga('create', 'UA-8194326-1', 'auto');
     ga('send', 'pageview');
   </script>
+  <?php } ?>
 </head>
 
 <body id="top" class="<?php do_action('basic2col_bodyclass'); ?>">
