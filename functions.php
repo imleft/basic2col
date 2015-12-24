@@ -145,4 +145,10 @@
 
   if (function_exists('register_sidebar_widget'))
     register_sidebar_widget(__('Search','basic2col'), 'widget_basic2col_search');
+
+  function basic2col_remove_rel($html, $id) {
+    return preg_replace('/\s+rel="attachment wp-att-[0-9]+"/i', '', $html);
+  }
+
+  add_filter('image_send_to_editor', 'basic2col_remove_rel', 10, 2);
 ?>
