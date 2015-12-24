@@ -1,10 +1,8 @@
-<?php if(function_exists('precious_get_file')) { precious_get_file('header'); } else {  get_header(); }
+<?php get_header();
 
-	 if (have_posts()) : ?>
-
+  if (have_posts()) : ?>
 
 <h2 id="pagetitle"><?php _e('Search results for','basic2col'); ?> <?php the_search_query(); ?></h2>
-
 		
 <?php /*start loop*/ while (have_posts()) : the_post(); ?>
 
@@ -33,4 +31,4 @@ endif; ?>
 
 
 
-<?php if(function_exists('precious_get_file')) { precious_get_file('footer'); } else {  get_footer(); }?>
+<?php get_footer(); ?>

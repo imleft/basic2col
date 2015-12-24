@@ -1,7 +1,7 @@
 <?php if(!(is_page() || is_single()) ){ ?>
-<div id="pagenav">
-  <?php posts_nav_link('<span class="sep none"> - </span>', '<span class="right nextposts">'.__('Next &raquo;','basic2col').'</span>', '<span class="left preciousposts">'.__('&laquo; Previous','basic2col').'</span>'); ?>
-</div>
+  <div id="pagenav">
+    <?php posts_nav_link('<span class="sep none"> - </span>', '<span class="right nextposts">'.__('Next &raquo;','basic2col').'</span>', '<span class="left preciousposts">'.__('&laquo; Previous','basic2col').'</span>'); ?>
+  </div>
 <?php } ?>
 
 </div>
