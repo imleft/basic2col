@@ -87,7 +87,7 @@ text-align: center;
 float: right;
 }
 .left, .alignleft {
-float: left;
+    float: left;
 }
 .none {
 display: none;
