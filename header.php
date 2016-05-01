@@ -9,6 +9,9 @@
     <?php if (is_home() || is_front_page()) { ?> : <?php bloginfo('description'); ?><?php } ?>
   </title>
 
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans'
+        rel='stylesheet'
+        type='text/css'>
   <?php basic2col_css() ?>
 
   <link rel="alternate"
