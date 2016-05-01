@@ -5,351 +5,286 @@ Description: Theme for doof.me.uk based on basic2col by Kristin K. Wangen.
 Version: 3.1.2
 Author: Nick Gasson
 Author URI: http://www.doof.me.uk
-Tags: white, two column, basic, minimalistic, elastic width, custom page templates, right sidebar
+Tags: white, two column, basic, minimalistic, elastic width, right sidebar
 */
-/*classes css - so you don't loose them creatin child themes*/
 
-/*classes*/
+/* Classes */
 .center, .aligncenter, .centered {
-text-align: center;
+  text-align: center;
 }
 .right, .alignright {
-float: right;
+  float: right;
 }
 .left, .alignleft {
-float: left;
+  float: left;
 }
 .none {
-display: none;
+  display: none;
 }
 .righttxt {
-text-align:right;
+  text-align: right;
 }
 .credits {
-clear:both;
-font-style:italic;
+  clear: both;
+  font-style: italic;
 }
 
-
-/*images*/
+/* Images */
 img {
-border: none;
-margin: 2px;
+  border: none;
+  margin: 2px;
 }
 img.center, img.aligncenter, img.centered {
-display:block;
-margin:5px auto;
+  display: block;
+  margin: 5px auto;
 }
 img.alignright, img.right {
-margin-left: 5px;
+  margin-left: 5px;
 }
 img.alignleft, img.left  {
-margin-right: 5px;
+  margin-right: 5px;
 }
 img.rssimg {
-margin:0px;
+  margin: 0px;
 }
 .postcontent img {
-max-width:100%;
-overflow: hidden;
+  max-width: 100%;
+  overflow: hidden;
 }
 .wp-smiley {
-border:none;
-margin:0px;
+  border: none;
+  margin: 0px;
 }
 
-/*general layout*/
+/* General layout */
 body {
-background:#fff;
-color : #111; 
-font-family :'Lucida Sans Unicode','Lucida Sans', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Sans Vera', 
-		Verdana, Arial, Tahoma, Helvetica, Sans-Serif; 
-font-style : normal;
-padding:2px 2em;
-margin:0px;
-line-height:1.5em;
-font-size:70%;
-text-align:center;
+  background:#fff;
+  color : #111; 
+  font-family :'Lucida Sans Unicode','Lucida Sans', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Sans Vera', Verdana, Arial, Tahoma, Helvetica, Sans-Serif; 
+  font-style: normal;
+  padding: 2px 2em;
+  margin: 0px;
+  line-height: 1.5em;
+  font-size: 70%;    /* XXX? */
+  text-align: center;
 }
 hr {
-border: 1px solid #ccc;
+  border: 1px solid #ccc;
 } 
 blockquote, code, pre {
-color:#333;
+  color: #333;
 }
 code, pre {
-font-family:Courier,  'Lucida Console','Courier New', Sans-Serif;
+  font-family: Courier, 'Lucida Console','Courier New', Sans-Serif;
 }
 
-/*font styles*/
+/* Font styles */
 p {
-font-size : 1em; 
-font-style : normal; 
-padding: 0px;
+  font-size: 1em; 
+  font-style: normal; 
+  padding: 0px;
 } 
 h2 {
-font-size : 1.4em; 
+  font-size : 1.4em; 
 }
 h3 {
-font-size:1.2em;
+  font-size:1.2em;
 }
 h4, h5, h6 {
-font-size:1em;
+  font-size:1em;
 }
 h2, h3, h1, h4, h5, h6 {
-font-family :Georgia,'Trebuchet MS', 'Lucida Sans',  'Lucida Grande', 'Bitstream Sans Vera', 
-		Verdana, Arial, Tahoma, Helvetica, Sans-Serif; 
-color : #333; 
-margin: 10px 0px;
-padding:2px 0px;
-clear: both;
+  font-family: Georgia,'Trebuchet MS', 'Lucida Sans',  'Lucida Grande', 'Bitstream Sans Vera', Verdana, Arial, Tahoma, Helvetica, Sans-Serif; 
+  color: #333; 
+  margin: 10px 0px;
+  padding: 2px 0px;
+  clear: both;
 }
 
-/*linkcolor*/
+/* Link colour */
 a:link, a:visited {
-font-weight:normal;
-color : #600;
-text-decoration : none; 
-
+  font-weight: normal;
+  color: #600;
+  text-decoration: none; 
 }
 a:hover, a:active {
-color : #666; 
-text-decoration : none;
-border:none;
+  color: #666; 
+  text-decoration: none;
+  border: none;
 } 
-
-#content h2 a:link, #content h2 a:visited, #header h1 a:link, #header h1 a:visited, #content h3 a:link, #content h3 a:visited  {
-color:#333;
-font-weight:normal;
-text-decoration:none;
-border:none;
+#content h2 a:link, #content h2 a:visited, #header h1 a:link, #header h1 a:visited, #content h3 a:link, #content h3 a:visited {
+  color: #333;
+  font-weight: normal;
+  text-decoration: none;
+  border: none;
 }
 #content h2 a:hover, #content h2 a:active, #header h1 a:hover, #header h1 a:active, #content h3 a:hover, #content h3 a:active {
-color:#999;
+  color: #999;
 }
 
-
-/*classes - these are also located in classes.css so child themes don't loose them*/
-.center, .aligncenter, .centered {
-text-align: center;
-}
-.right, .alignright {
-float: right;
-}
-.left, .alignleft {
-    float: left;
-}
-.none {
-display: none;
-}
-.righttxt {
-text-align:right;
-}
-.credits {
-clear:both;
-font-style:italic;
-}
-
-
-/*images these are also located in classes.css so child themes don't loose them*/
-img {
-border: none;
-margin: 2px;
-}
-img.center, img.aligncenter, img.centered {
-display:block;
-margin:5px auto;
-}
-img.alignright, img.right {
-margin-left: 5px;
-}
-img.alignleft, img.left  {
-margin-right: 5px;
-}
-img.rssimg {
-margin:0px;
-}
+/* Border colours */
 .postcontent img {
-max-width:100%;
-overflow: hidden;
+  border: 1pt solid #eee;
 }
-.wp-smiley {
-border:none;
-margin:0px;
-}
-
-
-/*border-colors*/
-.postcontent img {
-border:1pt solid #eee;
-}
-
 .border {
-border: 1px solid #ccc;
+  border: 1px solid #ccc;
 }
 
-/*wrap and header*/
+/* Wrap and header */
 #accessnav {
-display:none;
+  display: none;
 }
-
 #wrap {
-background : transparent;
-max-width:65em; 
-margin:5px auto;
-padding:0px;
-text-align:left;
+  background: transparent;
+  max-width: 65em; 
+  margin: 5px auto;
+  padding: 0px;
+  text-align: left;
 }
 
-/*header*/
+/* Header */
 #header {
-background : transparent;
-border-bottom:1px solid #ccc;
-margin:4px 4px 0px;
-padding:15px 10px;
+  background : transparent;
+  border-bottom: 1px solid #ccc;
+  margin: 4px 4px 0px;
+  padding: 15px 10px;
 }
 #header h1{
-padding:0px;
-font-size:2em;
-display:inline;
+  padding: 0px;
+  font-size: 2em;
+  display: inline;
 }
 #header p {
-padding:0px;
-margin:2px 10px;
-font-size:1.1em;
-display:inline;
+  padding: 0px;
+  margin: 2px 10px;
+  font-size: 1.1em;
+  display: inline;
 }
 
-/*content and post settings*/
-
+/* Content and post settings */
 #content{
-background : transparent;
-padding: 5px 1em;
-margin: 2px 0.1em 5px;
-width: 67%;
-float: left;
-font-size:1.1em;
+  background : transparent;
+  padding: 5px 1em;
+  margin: 2px 0.1em 5px;
+  width: 67%;
+  float: left;
+  font-size:1.1em;
 }
-
 .post h2, .archives h3, .search h3 {
-border-bottom: 1pt solid #eee;
+  border-bottom: 1pt solid #eee;
 }
 .post {
-margin: 5px 0px;
+  margin: 5px 0px;
 }
 .postmeta {
-font-size:0.9em;
-clear:both
+  font-size:0.9em;
+  clear:both
 }
 div.postmeta p {
-margin: 2px 0px;
-padding:0px;
+  margin: 2px 0px;
+  padding:0px;
 }
 .postmeta {
-margin: 10px 0px 5px;
+  margin: 10px 0px 5px;
 }
-
 .postcontent {
-line-height:1.6em;
+  line-height:1.6em;
 }
 
-
-/*postnav*/
+/* Postnav */
 #postnav {
-clear:both;
-margin:0px;
+  clear:both;
+  margin:0px;
 }
 #postnav li {
-display:inline;
-margin: 2px 0px;
+  display:inline;
+  margin: 2px 0px;
 }
 
-/*comments*/
+/* Comments */
 #commentbox {
-background : transparent;
-clear:both;
-margin:10px 0px;
-
+  background : transparent;
+  clear:both;
+  margin:10px 0px;
 }
 ol#commentlist  {
-list-style-position: inside;
-margin:2px 0px;
-padding:0px;
+  list-style-position: inside;
+  margin:2px 0px;
+  padding:0px;
 }
 #commentlist li{
-border-bottom:1pt solid #eee;
-margin: 10px 0px;
+  border-bottom:1pt solid #eee;
+  margin: 10px 0px;
 }
 #commentform fieldset {
-padding:0;
-margin:0;
+  padding:0;
+  margin:0;
 }
 #commentform legend {
-font-family :Georgia,'Trebuchet MS', 'Lucida Sans',  'Lucida Grande', 'Bitstream Sans Vera', 
-		Verdana, Arial, Tahoma, Helvetica, Sans-Serif; 
-color : #333; 
-margin: 10px 0px 5px;
-padding:2px 0px;
-font-size:120%;
+  font-family: Georgia,'Trebuchet MS', 'Lucida Sans',  'Lucida Grande', 'Bitstream Sans Vera', Verdana, Arial, Tahoma, Helvetica, Sans-Serif; 
+  color: #333; 
+  margin: 10px 0px 5px;
+  padding:2px 0px;
+  font-size:120%;
 }
 #commentform textarea {
-width:90%;
+  width:90%;
 }
 #commentform label, #commentform textarea {
-display:block;
+  display:block;
 }
 #commentform input {
-width:50%;
+  width:50%;
 }
 #commentform input.submit {
-width:40%;
-margin:2px 0px;
+  width:40%;
+  margin:2px 0px;
 }
 .approve {
-border: 1pt solid #ccc;
-background : #eee;
-padding:5px;
-font-size:90%;
+  border: 1pt solid #ccc;
+  background : #eee;
+  padding:5px;
+  font-size:90%;
 }
 .comment_time {
-font-size:0.8em;
-text-align:right;
-clear:both;
+  font-size:0.8em;
+  text-align:right;
+  clear:both;
 }
 #commentlist cite {
-font-style:normal;
+  font-style:normal;
 }
 
 #commentbox {
-border-top: 1pt solid #eee;
+  border-top: 1pt solid #eee;
 }
 .avatar {
-float:right;
-border: 1pt solid #eee;
-margin-left:10px;
-padding:2px;
+  float:right;
+  border: 1pt solid #eee;
+  margin-left:10px;
+  padding:2px;
 }
 
-/*sidebar*/
+/* Sidebar */
 #sidebar {
-background : transparent;
-padding: 5px 0px;
-margin: 5px 0px;
-width: 25%;
-float:right;
+  background : transparent;
+  padding: 5px 0px;
+  margin: 5px 0px;
+  width: 25%;
+  float:right;
 }
 #sidebar ul, #sidebar li{
-list-style-type: none;
-margin: 2px;
-padding:0px;
+  list-style-type: none;
+  margin: 2px;
+  padding:0px;
 }
-#sidebar li{
-margin:0px;
-padding: 2px 0px;
+#sidebar li {
+  margin:0px;
+  padding: 2px 0px;
 }
 #sidebar div {
-margin: 2px;
-padding:0px;
+  margin: 2px;
+  padding:0px;
 }
 #sidebar h2 {
 margin: 5px 0px 0px;
@@ -357,118 +292,112 @@ padding: 4px 0px;
 font-size:100%;
 }
 #sidebar li a {
-border:none;
+  border:none;
 }
 #sidebar li li {
-border-bottom: 1pt solid #eee;
+  border-bottom: 1pt solid #eee;
 }
 #sidebar li li li {
-list-style:circle inside;
-border:none;
-margin-left:0px;
+  list-style:circle inside;
+  border:none;
+  margin-left:0px;
 }
 
-/*searchform*/
+/* Search form */
 #searchform label {
-font-weight:bold;
+  font-weight:bold;
 }
 #searchform input#s {
-width:50%;
+  width:50%;
 }
 #searchform input.submit {
-width:30%;
+  width:30%;
 }
 
-/*Widgets fixing*/
+/* Widgets fixing */
 .widget_rss h2 a {
-color:#333;
-font-weight:bold;
+  color:#333;
+  font-weight:bold;
 }
 .widget_rss img {
-margin:0px;
+  margin:0px;
 }
 
-/*Callendar*/
+/* Calendar */
 #wp-calendar a {
-font-weight:bold;
+  font-weight:bold;
 }
 #today {
-background:#eee;
+  background:#eee;
 }
 
-
-
-/*footer*/
+/* Footer */
 #footer {
-background : transparent;
-border-top:1px solid #ccc;
-margin:5px;
-clear: both;
-padding:5px 10px;
-text-align:center;
+  background : transparent;
+  border-top:1px solid #ccc;
+  margin:5px;
+  clear: both;
+  padding:5px 10px;
+  text-align:center;
 }
 #footer ul{
-margin: 2px;
-padding:0px;
+  margin: 2px;
+  padding:0px;
 }
 #footer li{
-display: inline;
-margin:0px 3px;
+  display: inline;
+  margin:0px 3px;
 }
 
-
-
-/*forms*/
-input , textarea, select, option {
-font-family :'Lucida Sans', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Sans Vera', 
-		Verdana, Arial, Tahoma, Helvetica, Sans-Serif; 
-font-size:100%;
-padding: 2px;
-background : #eee;
-color : #111; 
-border: 1px solid #ccc;
-margin: 2px;
+/* Forms */
+input, textarea, select, option {
+  font-family :'Lucida Sans', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Sans Vera', Verdana, Arial, Tahoma, Helvetica, Sans-Serif; 
+  font-size:100%;
+  padding: 2px;
+  background : #eee;
+  color : #111; 
+  border: 1px solid #ccc;
+  margin: 2px;
 }
 fieldset, legend {
-background:transparent;
-color : #111; 
-border: none;
-padding: 5px;
+  background: transparent;
+  color : #111; 
+  border: none;
+  padding: 5px;
 }
 label, legend {
-font-weight:normal;
+  font-weight:normal;
 }
 
-
-/*lists*/
+/* Lists */
 ul {
-list-style-type: disc;
-list-style-position: outside;
-margin: 5px 2em;
-padding:2px;
+  list-style-type: disc;
+  list-style-position: outside;
+  margin: 5px 2em;
+  padding:2px;
 }
 ol { 
-list-style-position: outside;
-margin: 5px 2em;
-padding:2px;
+  list-style-position: outside;
+  margin: 5px 2em;
+  padding:2px;
 }
 
-/*tables*/
+/* Tables */
 table {
-color : #111; 
-width: 90%;
-margin: 5px auto;
-padding: 0px;
-font-size:1em;
+  color : #111; 
+  width: 90%;
+  margin: 5px auto;
+  padding: 0px;
+  font-size:1em;
 }
 caption {
-color: #333;
-font-weight: normal;
-padding: 5px;
+  color: #333;
+  font-weight: normal;
+  padding: 5px;
 }
 td, th, tr {
-padding: 5px;
-text-align:left;
+  padding: 5px;
+  text-align:left;
 }
 
 
