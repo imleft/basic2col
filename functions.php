@@ -51,10 +51,6 @@
   function basic2col_css() {
 ?>
   <link type="text/css"
-        href="<?php bloginfo('template_url'); ?>/css/classes.css"
-        media="all"
-        rel="stylesheet" />
-  <link type="text/css"
         href="<?php bloginfo('stylesheet_url'); ?>"
         media="screen"
         rel="stylesheet" />
@@ -62,8 +58,6 @@
         href="<?php bloginfo('template_url'); ?>/css/print.css"
         media="print"
         rel="stylesheet" />
-
-  <?php do_action('basic2col_css'); ?>
 <?php
   }
 
