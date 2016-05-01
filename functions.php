@@ -24,17 +24,6 @@
     }
   }
 
-  function basic2col_contentfooter() {
-    do_action('basic2col_contentfooter');
-
-    if (TEMPLATEPATH !== STYLESHEETPATH && file_exists(STYLESHEETPATH . '/contentfooter.php')) {
-      load_template(STYLESHEETPATH . '/contentfooter.php');
-    }
-    else {
-      load_template(TEMPLATEPATH . '/contentfooter.php');
-    }
-  }
-
   function basic2col_sidebar() {
     do_action('basic2col_sidebar');
 
