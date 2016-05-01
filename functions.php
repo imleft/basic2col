@@ -13,17 +13,6 @@
     }
   }
 
-  function basic2col_contentheader() {
-    do_action('basic2col_contentheader');
-
-    if(TEMPLATEPATH !== STYLESHEETPATH && file_exists(STYLESHEETPATH . '/contentheader.php')) {
-      load_template(STYLESHEETPATH . '/contentheader.php');
-    }
-    else {
-      load_template(TEMPLATEPATH . '/contentheader.php');
-    }
-  }
-
   function basic2col_sidebar() {
     do_action('basic2col_sidebar');
 

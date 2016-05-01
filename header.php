@@ -1,5 +1,4 @@
 <?php basic2col_textdomain(); ?>
-
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -21,7 +20,7 @@
         title="Atom 1.0"
         href="<?php bloginfo('atom_url'); ?>" />
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-  <!-- <?php wp_get_archives('type=monthly&format=link'); ?> -->
+  <?php /* wp_get_archives('type=monthly&format=link'); */ ?>
   <?php wp_head(); ?>
   <?php if (!is_user_logged_in()) { ?>
     <script type="text/javascript">
@@ -36,6 +35,23 @@
 </head>
 
 <body id="top" class="<?php do_action('basic2col_bodyclass'); ?>">
-  <?php basic2col_contentheader(); /*loading contentheader.php*/ ?>
+
+  <div id="wrap">
+    <div id="accessnav">
+      [ <a href="#content"><?php _e('Content','basic2col'); ?></a> | <a href="#sidebar"><?php _e('Sidebar','basic2col'); ?></a> ]
+    </div>
+
+    <div id="header">
+      <h1>
+        <a accesskey="h" href="<?php bloginfo('url'); ?>/">
+          <span title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></span>
+        </a>
+      </h1>
+
+      <p><?php bloginfo('description'); ?></p>
+    </div>
+
+    <?php basic2col_navbar(); /*loading navbar.php if it exists*/ ?>
+    <div id="content">
 
 <!-- end header -->
