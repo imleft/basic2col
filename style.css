@@ -60,12 +60,12 @@ img.rssimg {
 body {
   background:#fff;
   color : #111;
-  font-family: 'Arimo', 'Liberation Sans', Sans-Serif;
+  font-family: 'Arimo', Sans-Serif;
   font-style: normal;
   padding: 2px 2em;
   margin: 0px;
   line-height: 1.5em;
-  font-size: 72%;
+  font-size: 80%;
   text-align: center;
 }
 hr {
