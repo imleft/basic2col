@@ -1,6 +1,4 @@
 <?php
-  /*some template functions to make child theme customization a bit more flexible*/
-
   /*basic2col_navbar - either create a function and hook into 'basic2col' navbar or create a file called navbar.php*/
   function basic2col_navbar() {
     do_action('basic2col_navbar');
@@ -121,6 +119,49 @@
   function basic2col_remove_rel($html, $id) {
     return preg_replace('/\s+rel="attachment wp-att-[0-9]+"/i', '', $html);
   }
+
+  function basic2col_comment_callback($comment, $args, $depth) {
+    $GLOBALS['comment'] = $comment;
+?>
+  <li <?php comment_class(); ?> id="comment-<?php comment_ID() ?>">
+    <?php
+      if (function_exists('get_avatar')) {
+	echo get_avatar( get_comment_author_email(), 40 );
+      }
+    ?>
+
+    <span class="comment_author">
+      <?php comment_type(__('Comment by ','basic2col'),
+                         __('Trackback from','basic2col'),
+                         __('Pingback from','basic2col')); ?>
+      <cite><?php comment_author_link() ?></cite>
+    </span>
+
+    <div class="comment_text">
+      <?php comment_text() ?>
+    </div>
+
+    <!--
+    <div>
+      <?php comment_reply_link(
+        array_merge( $args, array('depth' => $depth,
+                                  'max_depth' => $args['max_depth']))) ?>
+    </div>
+    -->
+
+    <?php if ($comment->comment_approved == '0') : ?>
+      <p class="approve"><?php echo basic2col_moderation_message(); ?></p>
+    <?php endif; ?>
+
+    <p class="comment_time">
+      <?php comment_date() ?> @
+      <a href="#comment-<?php comment_ID() ?>"
+	 title="Permalink to comment-<?php comment_ID() ?>">
+	<?php comment_time() ?></a>
+      <?php edit_comment_link(__('Edit','basic2col'),' - ',''); ?>
+    </p>
+<?php
+   }
 
   add_filter('image_send_to_editor', 'basic2col_remove_rel', 10, 2);
 ?>
