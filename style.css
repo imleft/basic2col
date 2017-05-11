@@ -77,10 +77,13 @@ hr {
     border: 1px solid #ccc;
 }
 blockquote, code, pre {
-    color: #333;
+    color: #111;
+}
+code {
+    background-color: #f0f0f0;
 }
 code, pre {
-    font-family: 'Courier', Sans-Serif;
+    font-family: 'Source Code Pro', Monospace;
 }
 
 /* Font styles */

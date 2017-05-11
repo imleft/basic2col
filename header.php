@@ -10,6 +10,7 @@
   </title>
 
   <link href='https://fonts.googleapis.com/css?family=Arimo:400,700,400italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
   <?php basic2col_css() ?>
 
   <link rel="alternate"
