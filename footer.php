@@ -17,7 +17,7 @@
       <a accesskey="1" href="<?php bloginfo('url'); ?>/">
 	<?php bloginfo('name'); ?>
       </a>
-      2008-2016
+      2008-2018
     </li>
     <li>
       <a href="http://validator.w3.org/check?uri=referer"
