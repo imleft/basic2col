@@ -73,7 +73,10 @@
               </a>
             </p>
           <?php else : ?>
-            <label for="author"><?php _e('Name','basic2col'); ?></label>
+            <label for="author">
+              <?php _e('Name','basic2col'); ?>
+              <small>(<?php _e('optional','basic2col');?>)</small>
+            </label>
             <input type="text"
                    name="author"
                    id="author"
@@ -81,23 +84,15 @@
                    size="30"
                    tabindex="1" />
 
-            <label for="email"><?php _e('Email','basic2col'); ?></label>
+            <label for="email">
+              <?php _e('Email','basic2col'); ?>
+              <small>(<?php _e('optional','basic2col');?>)</small>
+            </label>
             <input type="text"
                    name="email"
                    id="email" value="<?php echo $comment_author_email; ?>"
                    size="30"
                    tabindex="2" />
-
-            <label for="url">
-              <?php _e('URL','basic2col'); ?>
-              <small>(<?php _e('optional','basic2col');?>)</small>
-            </label>
-            <input type="text"
-                   name="url"
-                   id="url"
-                   value="<?php echo $comment_author_url; ?>"
-                   size="30"
-                   tabindex="3" />
           <?php endif; ?>
 
           <label for="comment"><?php _e('Your comment','basic2col'); ?></label>
