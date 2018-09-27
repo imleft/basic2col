@@ -52,10 +52,6 @@
         href="<?php bloginfo('stylesheet_url'); ?>"
         media="screen"
         rel="stylesheet" />
-  <link type="text/css"
-        href="<?php bloginfo('template_url'); ?>/css/print.css"
-        media="print"
-        rel="stylesheet" />
 <?php
   }
 
