@@ -12,6 +12,7 @@ Tags: white, two column, basic, minimalistic, elastic width, right sidebar
   font-family: 'Source Code Pro';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url('fonts/source-code-pro-v7-latin-regular.eot'); /* IE9 Compat Modes */
   src: local('Source Code Pro'), local('SourceCodePro-Regular'),
        url('fonts/source-code-pro-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -25,6 +26,7 @@ Tags: white, two column, basic, minimalistic, elastic width, right sidebar
   font-family: 'Arimo';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url('fonts/arimo-v11-latin-regular.eot'); /* IE9 Compat Modes */
   src: local('Arimo Regular'), local('Arimo-Regular'),
        url('fonts/arimo-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -38,6 +40,7 @@ Tags: white, two column, basic, minimalistic, elastic width, right sidebar
   font-family: 'Arimo';
   font-style: italic;
   font-weight: 400;
+  font-display: swap;
   src: url('fonts/arimo-v11-latin-italic.eot'); /* IE9 Compat Modes */
   src: local('Arimo Italic'), local('Arimo-Italic'),
        url('fonts/arimo-v11-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -51,6 +54,7 @@ Tags: white, two column, basic, minimalistic, elastic width, right sidebar
   font-family: 'Arimo';
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: url('fonts/arimo-v11-latin-700.eot'); /* IE9 Compat Modes */
   src: local('Arimo Bold'), local('Arimo-Bold'),
        url('fonts/arimo-v11-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -162,24 +166,24 @@ h2, h3, h1, h4, h5, h6 {
 
 /* Link colour */
 a:link, a:visited {
-            font-weight: normal;
-            color: #600;
-            text-decoration: none;
-        }
+    font-weight: normal;
+    color: #600;
+    text-decoration: none;
+}
 a:hover, a:active {
-             color: #666;
-             text-decoration: none;
-             border: none;
-         }
+    color: #666;
+    text-decoration: none;
+    border: none;
+}
 #content h2 a:link, #content h2 a:visited, #header h1 a:link, #header h1 a:visited, #content h3 a:link, #content h3 a:visited {
-                                                                                                            color: #333;
-                                                                                                            font-weight: normal;
-                                                                                                            text-decoration: none;
-                                                                                                            border: none;
-                                                                                                        }
+    color: #333;
+    font-weight: normal;
+    text-decoration: none;
+    border: none;
+}
 #content h2 a:hover, #content h2 a:active, #header h1 a:hover, #header h1 a:active, #content h3 a:hover, #content h3 a:active {
-                                                                                                             color: #999;
-                                                                                                         }
+    color: #999;
+}
 
 /* Border colours */
 .postcontent img {
@@ -229,6 +233,14 @@ a:hover, a:active {
     float: left;
     font-size:1.1em;
 }
+
+@media screen and (max-width: 799px) {
+    #content {
+        width: 100%;
+        padding: 5px 0em;
+    }
+}
+
 .post h2, .archives h3, .search h3 {
     border-bottom: 1pt solid #eee;
 }
@@ -247,7 +259,8 @@ div.postmeta p {
     margin: 10px 0px 5px;
 }
 .postcontent {
-    line-height:1.6em;
+    line-height: 1.6em;
+    text-align: justify;
 }
 
 /* Postnav */
@@ -329,15 +342,15 @@ ol#commentlist  {
     padding: 5px 0px;
     margin: 5px 0px;
     width: 25%;
-    float:right;
+    float: right;
 }
 #sidebar ul, #sidebar li{
     list-style-type: none;
     margin: 2px;
-    padding:0px;
+    padding: 0px;
 }
 #sidebar li {
-    margin:0px;
+    margin: 0px;
     padding: 2px 0px;
 }
 #sidebar div {
@@ -359,6 +372,21 @@ ol#commentlist  {
     list-style:circle inside;
     border:none;
     margin-left:0px;
+}
+
+@media screen and (max-width: 799px) {
+    #sidebar {
+        float: bottom;
+        width: 100%;
+    }
+
+    #sidebar li li {
+        border-bottom: none;
+    }
+
+    #searchform {
+        display: none;
+    }
 }
 
 /* Search form */
