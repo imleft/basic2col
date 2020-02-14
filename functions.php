@@ -160,4 +160,24 @@
    }
 
   add_filter('image_send_to_editor', 'basic2col_remove_rel', 10, 2);
+
+  function basic2col_lazy_images($content) {
+    if (!in_the_loop() || !is_main_query()) {
+      return $content;
+    }
+
+    if (!preg_match_all('/<img [^>]+>/', $content, $matches)) {
+      return $content;
+    }
+
+    foreach ( $matches[0] as $image ) {
+      if (strpos($image, 'wp-image-')) {
+        $new = '<img loading="lazy" ' . substr($image, 5);
+        $content = str_replace($image, $new, $content);
+      }
+    }
+
+    return $content;
+  }
+  add_filter('the_content', 'basic2col_lazy_images');
 ?>
