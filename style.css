@@ -110,6 +110,7 @@ img.rssimg {
 }
 .postcontent img {
     max-width: 100%;
+    height: auto;
     overflow: hidden;
 }
 .wp-smiley {
@@ -492,6 +493,7 @@ td, th, tr {
     background-color: #f3f3f3;
     padding-top: 4px;
     margin: 10px;
+    max-width: 100%;
     -moz-border-radius: 3px;
     -khtml-border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -501,7 +503,9 @@ td, th, tr {
     margin: 0;
     padding: 0;
     border: 0 none;
+    height: auto;
 }
+
 .wp-caption p.wp-caption-text {
     padding: 0 4px 5px;
     margin: 0;
