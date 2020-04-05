@@ -137,10 +137,16 @@ blockquote, code, pre {
     color: #111;
 }
 code {
-    background-color: #f0f0f0;
-}
-code, pre {
+    background-color: #f5f2f0; /*: #f0f0f0;*/
+    /*background-color: #101030;*/
+    padding: 1px 4px 1px 4px;
+    border-radius: 5px;
+
     font-family: 'Source Code Pro', Monospace;
+    /*font-family: Consolas, Monaco, 'Lucida Console', Monospace;*/
+    font-size: 1em;
+
+    color: #444;
 }
 
 /* Font styles */
@@ -261,7 +267,7 @@ div.postmeta p {
 }
 .postcontent {
     line-height: 1.6em;
-    text-align: justify;
+    /*text-align: justify;*/
 }
 
 /* Postnav */

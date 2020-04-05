@@ -1,0 +1,49 @@
+.wp-geshi-highlight pre, .wp-geshi-highlight span {
+    color: #444;
+    overflow: visible;
+    margin: 0 !important;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    background: none;
+    font-size: 12px !important;
+    line-height: 20px !important;
+    font-family: Consolas, Monaco, 'Lucida Console', monospace;
+    word-wrap: normal; /* Otherwise Chrome wraps lines */
+    white-space: pre;
+}
+
+.wp-geshi-highlight ol {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style-type: decimal !important;
+}
+
+.wp-geshi-highlight ol > li {
+    position: relative; /* Create a positioning context */
+    margin: 0 0 0 40px; /* Give each list item a left margin to make room for the numbers */
+}
+
+.wp-geshi-highlight li {
+    padding-left: 2px;
+    font-family: Consolas, Monaco, 'Lucida Console', monospace !important;
+    font-size: 12px !important;
+    line-height: 20px !important;
+    list-style: decimal !important;
+}
+
+.wp-geshi-highlight {
+    padding: 7px 10px 7px 10px;
+    margin: 2px 0 2px 0;
+    overflow-x: auto;
+    border-radius: 5px;
+    /*border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;*/
+    background-color: #f5f2f0; /* #f0f0f0;*/ /*#fdfdfd;*/
+    /*box-shadow: 0 8px 7px -10px #CCC, 0 -8px 7px -10px #CCC;*/
+}
+
+/* Enforce background-color in some non-official themes when using numbering */
+/*.wp-geshi-highlight div ol li {
+    background-color: #fdfdfd;
+}*/
