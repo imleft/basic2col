@@ -161,6 +161,7 @@
 
   add_filter('image_send_to_editor', 'basic2col_remove_rel', 10, 2);
 
+  /* WordPress does this itself now 
   function basic2col_lazy_images($content) {
     if (!in_the_loop() || !is_main_query()) {
       return $content;
@@ -180,4 +181,17 @@
     return $content;
   }
   add_filter('the_content', 'basic2col_lazy_images');
+  */
+
+  add_action( 'do_faviconico', function() {
+    //Check for icon with no default value
+    if ( $icon = get_site_icon_url( 32 ) ) {
+      //Show the icon
+      wp_redirect( $icon );
+    } else {
+      //Show nothing
+      header( 'Content-Type: image/vnd.microsoft.icon' );
+    }
+    exit;
+  } );
 ?>
