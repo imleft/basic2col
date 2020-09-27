@@ -1,5 +1,4 @@
 <?php get_header();
-
   if (have_posts()) :
 ?>
 
@@ -46,7 +45,7 @@
 	<div class="postcontent">
 		<?php edit_post_link(__('Edit','basic2col'),'<p class="editlink">','</p>'); ?>
 
-		<?php the_excerpt() ?>
+		<?php the_content() ?>
 	</div>
 
 
