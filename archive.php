@@ -48,12 +48,6 @@
 		<?php the_content() ?>
 	</div>
 
-
-	<p class="postmeta">
-		<a href="<?php the_permalink() ?>"  title="<?php the_title(); ?>">
-		<?php _e('Full story','basic2col'); ?></a> &raquo;
-	</p>
-
 </div>
 
 <?php endwhile; else :
