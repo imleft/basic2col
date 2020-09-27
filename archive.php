@@ -42,11 +42,27 @@
 <div class="post archives" id="post-<?php the_ID(); ?>">
 	<h3 class="posttitle"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
 
-	<div class="postcontent">
-		<?php edit_post_link(__('Edit','basic2col'),'<p class="editlink">','</p>'); ?>
+        <p class="date"><?php the_time(__('F jS, Y','basic2col')); ?></p>
 
-		<?php the_content() ?>
+	<div class="postcontent">
+	  <?php the_content() ?>
 	</div>
+
+        <p class="postmeta">
+          <?php _e('Filed in','basic2col'); ?> <?php the_category(',') ?>
+
+          <?php basic2col_tags_front(); ?>
+
+          <?php if(comments_open() || pings_open()) : ?>
+            - <a href="<?php comments_link(); ?>"
+                 title="<?php _e('Comments to','basic2col'); ?> <?php the_title(); ?>">
+            <?php comments_number('0','1','%'); ?> <?php _e('Comments','basic2col'); ?></a>
+          <?php else : ?>
+            - <?php _e('Comments closed','basic2col'); ?>
+          <?php endif; ?>
+
+          <?php edit_post_link(__('Edit','basic2col'),' - ',''); ?>
+        </p>
 
 </div>
 
