@@ -92,11 +92,6 @@
 <?php
   }
 
-  if (function_exists('wp_register_sidebar_widget'))
-    wp_register_sidebar_widget('basic2col-search',
-			       __('Search','basic2col'),
-			       'widget_basic2col_search');
-
   function basic2col_remove_rel($html, $id) {
     return preg_replace('/\s+rel="attachment wp-att-[0-9]+"/i', '', $html);
   }
