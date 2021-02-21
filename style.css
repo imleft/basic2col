@@ -131,6 +131,7 @@ body {
     line-height: 1.5em;
     font-size: 0.8em;
     text-align: center;
+    word-wrap: break-word;
 }
 hr {
     border: 1px solid #ccc;
@@ -138,7 +139,7 @@ hr {
 blockquote, code, pre {
     color: #111;
 }
-code {
+code, kbd {
     background-color: #f5f2f0; /*: #f0f0f0;*/
     /*background-color: #101030;*/
     padding: 1px 4px 1px 4px;
@@ -265,13 +266,13 @@ a:hover, a:active {
 }
 div.postmeta p {
     margin: 2px 0px;
-    padding:0px;
+    padding: 0px;
 }
 .postmeta {
     margin: 10px 0px 5px;
 }
 .postcontent {
-    line-height: 1.6em;
+    line-height: 1.5em;
     /*text-align: justify;*/
 }
 
