@@ -28,11 +28,6 @@
 
   add_action('after_setup_theme', 'basic2col_lang_init');
 
-  /*support for wpmu*/
-  function is_basic2col_wpmu() {
-    return function_exists('is_site_admin');
-  }
-
   /*basic2col css files support*/
   function basic2col_css() {
 ?>

@@ -107,12 +107,7 @@
 
         <?php wp_register(); ?>
         <li><?php wp_loginout(); ?></li>
-
-        <?php /*add some support for MU*/ if(is_basic2col_wpmu()) { global $current_site; ?>
-        <li><a href="http://<?php echo $current_site->domain . $current_site->path ?>" title="<?php _e('Hosted by','basic2col'); ?> <?php echo $current_site->site_name ?>">
-            <?php echo $current_site->site_name ?></a></li>
-
-        <?php } wp_meta(); ?>
+        <?php wp_meta(); ?>
       </ul>
     </li>
   </ul>
