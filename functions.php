@@ -22,23 +22,11 @@
     }
   }
 
-  /*language support - .mo files need to have names like basic2col-LANG_code.mo and should be added to the /lang directory*/
-  function basic2col_textdomain($domain = 'basic2col') {
-    global $l10n;
-
-    $locale = get_locale();
-    if (empty($locale))
-      $locale = 'en_US';
-
-    $mofile = TEMPLATEPATH . "/lang/basic2col-$locale.mo";
-    load_textdomain('basic2col', $mofile);
-  }
-
   function basic2col_lang_init() {
-    basic2col_textdomain($domain);
+    load_theme_textdomain('basic2col', get_template_directory() . '/lang');
   }
 
-  add_action('init', 'basic2col_lang_init');
+  add_action('after_setup_theme', 'basic2col_lang_init');
 
   /*support for wpmu*/
   function is_basic2col_wpmu() {

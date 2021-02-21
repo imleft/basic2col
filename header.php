@@ -1,4 +1,3 @@
-<?php basic2col_textdomain(); ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
