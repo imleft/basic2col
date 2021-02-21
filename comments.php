@@ -50,7 +50,7 @@
 
   <?php if ('open' == $post->comment_status) : ?>
 
-    <?php if ( get_option('comment_registration') && !$user_ID ) : ?>
+    <?php if ( get_option('comment_registration') && !is_user_logged_in() ) : ?>
       <p>
         <?php _e('You have to be','basic2col'); ?>
         <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=<?php the_permalink(); ?>">
@@ -62,11 +62,11 @@
       <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
         <fieldset>
           <legend id="postcomment"><?php _e('Write comment','basic2col'); ?></legend>
-          <?php if ( $user_ID ) : ?>
+          <?php if ( is_user_logged_in() ) : ?>
             <p>
               <?php _e('You are logged in as','basic2col'); ?>
               <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php">
-                <?php echo $user_identity; ?>
+                <?php echo wp_get_current_user()->user_login; ?>
               </a>.
               <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout">
                 <?php _e('Logout','basic2col'); ?>
