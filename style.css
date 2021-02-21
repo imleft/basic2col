@@ -264,7 +264,7 @@ a:hover, a:active {
     font-size: 0.9em;
     clear:both
 }
-div.postmeta p {
+footer.postmeta p {
     margin: 2px 0px;
     padding: 0px;
 }
