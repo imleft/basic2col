@@ -150,6 +150,9 @@ code {
 
     color: #444;
 }
+pre {
+    overflow: auto;
+}
 
 /* Font styles */
 p {
@@ -234,13 +237,13 @@ a:hover, a:active {
 }
 
 /* Content and post settings */
-#content{
+#content {
     background : transparent;
     padding: 5px 1em;
     margin: 2px 0.1em 5px;
     width: 67%;
     float: left;
-    font-size:1.1em;
+    font-size: 1.1em;
 }
 
 @media screen and (max-width: 799px) {
