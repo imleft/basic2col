@@ -20,13 +20,13 @@
       2008-2021
     </li>
     <li>
-      <a href="http://validator.w3.org/check?uri=referer"
+      <a href="https://validator.w3.org/check?uri=referer"
          title="<?php _e('Valid HTML5','basic2col'); ?>">
 	html5
       </a>
     </li>
     <li>
-      <a href="http://jigsaw.w3.org/css-validator/check/referer"
+      <a href="https://jigsaw.w3.org/css-validator/check/referer"
          title="<?php _e('Valid CSS 3','basic2col'); ?>">
 	css3
       </a>

@@ -30,6 +30,7 @@
 </head>
 
 <body id="top" class="<?php do_action('basic2col_bodyclass'); ?>">
+  <?php wp_body_open(); ?>
 
   <div id="wrap">
     <div id="accessnav">
