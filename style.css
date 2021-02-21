@@ -129,7 +129,7 @@ body {
     padding: 2px 2em;
     margin: 0px;
     line-height: 1.5em;
-    font-size: 80%;
+    font-size: 0.8em;
     text-align: center;
 }
 hr {
@@ -161,13 +161,13 @@ p {
     padding: 0px;
 }
 h2 {
-    font-size : 1.4em;
+    font-size: 1.4em;
 }
 h3 {
-    font-size:1.2em;
+    font-size: 1.2em;
 }
 h4, h5, h6 {
-    font-size:1em;
+    font-size: 1em;
 }
 h2, h3, h1, h4, h5, h6 {
     color: #333;
@@ -260,7 +260,7 @@ a:hover, a:active {
     margin: 5px 0px;
 }
 .postmeta {
-    font-size:0.9em;
+    font-size: 0.9em;
     clear:both
 }
 div.postmeta p {
@@ -307,17 +307,17 @@ ol#commentlist  {
 #commentform legend {
     color: #333;
     margin: 10px 0px 5px;
-    padding:2px 0px;
-    font-size:120%;
+    padding: 2px 0px;
+    font-size: 1.2em;
 }
 #commentform textarea {
-    width:90%;
+    width: 90%;
 }
 #commentform label, #commentform textarea {
-    display:block;
+    display: block;
 }
 #commentform input {
-    width:50%;
+    width: 50%;
 }
 #commentform input.submit {
     width:40%;
@@ -325,17 +325,17 @@ ol#commentlist  {
 }
 .approve {
     border: 1pt solid #ccc;
-    background : #eee;
-    padding:5px;
-    font-size:90%;
+    background: #eee;
+    padding: 5px;
+    font-size: 0.9em;
 }
 .comment_time {
-    font-size:0.8em;
-    text-align:right;
-    clear:both;
+    font-size: 0.8em;
+    text-align: right;
+    clear: both;
 }
 #commentlist cite {
-    font-style:normal;
+    font-style: normal;
 }
 
 #commentbox {
@@ -372,10 +372,10 @@ ol#commentlist  {
 #sidebar h2 {
     margin: 5px 0px 0px;
     padding: 4px 0px;
-    font-size:100%;
+    font-size: 1em;
 }
 #sidebar li a {
-    border:none;
+    border: none;
 }
 #sidebar li li {
     border-bottom: 1pt solid #eee;
@@ -449,7 +449,7 @@ ol#commentlist  {
 
 /* Forms */
 input, textarea, select, option {
-    font-size:100%;
+    font-size: 1em;
     padding: 2px;
     background : #eee;
     color : #111;
@@ -485,7 +485,7 @@ table {
     width: 90%;
     margin: 5px auto;
     padding: 0px;
-    font-size:1em;
+    font-size: 1em;
 }
 caption {
     color: #333;
